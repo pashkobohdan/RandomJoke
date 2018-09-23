@@ -159,7 +159,7 @@ class GetJokePresenter @Inject constructor() : AbstractPresenter<GetJokeView>() 
     }
 
     companion object {
-        private const val LOAD_JOKE_DELAY = 2000L
+        private const val LOAD_JOKE_DELAY = 150L
         private const val LOAD_JOKE_TIMEOUT= 5000L
     }
 }

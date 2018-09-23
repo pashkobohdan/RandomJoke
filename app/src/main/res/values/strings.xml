@@ -1,7 +1,32 @@
 <resources>
     <string name="app_name">Random Joke</string>
-    <string name="get_one_more_joke_text">Get one more joke</string>
-    <string name="all_topics">All</string>
-    <string name="topic">Topic</string>
+    <string name="get_one_more_joke_text">Bскать</string>
+    <string name="topic">Что искать ?</string>
     <string name="ok">OK</string>
+    <string name="read_with_tts_descr">Прочитать голосом (TTS)</string>
+    <string name="reconnect_descr">Попробовать соединиться снова</string>
+    <string name="all_topics">Все подряд</string>
+    <string name="topic_anecdot">Анекдоты</string>
+    <string name="topic_rasskaz">Рассказы</string>
+    <string name="topic_stishki">Стишки</string>
+    <string name="topic_aforizmi">Афоризмы</string>
+    <string name="topic_citaty">Цитаты</string>
+    <string name="topic_tosty">Тосты</string>
+    <string name="topic_statusy">Статусы</string>
+    <string name="topic_anecdot_18">Анекдоты (+18)</string>
+    <string name="topic_rasskaz_18">Рассказы (+18)</string>
+    <string name="topic_stishki_18">Стишки (+18)</string>
+    <string name="topic_aforizmi_18">Афоризмы (+18)</string>
+    <string name="topic_citaty_18">Цитаты (+18)</string>
+    <string name="topic_tosty_18">Тосты (+18)</string>
+    <string name="topic_statusy_18">Статусы (+18)</string>
+    <string name="no_internet_connection">Отсутствует подключение к интернету.</string>
+    <string name="data_will_be_loaded_from_storage">Будут загружены уже сохраненные локально данные.</string>
+    <string name="for_reconnect_click_icon">Чтобы попытаться переподключиться - нажмите на появившийся значок, находящийся в нижнем левом углу</string>
+    <string name="connection_fixed">Связь с сетью восстановлена</string>
+    <string name="local_storage_load_error">Ошибка загрузки ранее сохраненных данных</string>
+    <string name="local_storage_save_error">Ошибка сохранения данных в локальное хранилище</string>
+    <string name="data_loaded_from_local_storage">Загружены данные с локального хранилища</string>
+    <string name="ask_for_shuffle_local_data_again">Не осталось данных сохраненных в локальном хранилище. Перетасовать и использовать снова ?</string>
+    <string name="no_local_data_error">На устройстве еще нету сохраненный данных. Нужно подключение к интернету</string>
 </resources>
