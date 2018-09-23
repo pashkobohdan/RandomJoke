@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Random Joke</string>
+    <string name="get_one_more_joke_text">Get one more joke</string>
+    <string name="all_topics">All</string>
+    <string name="topic">Topic</string>
+    <string name="ok">OK</string>
+</resources>

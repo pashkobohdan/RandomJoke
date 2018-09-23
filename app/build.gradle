@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.pashkobohdan.randomjoke"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    kapt {
+        generateStubs = true
+    }
+}
+
+// architecture
+def dagger2 = '2.11'
+
+// network
+def retrofit2 = '2.3.0'
+
+// ui
+def support = '27.1.1'
+
+// mvp
+def moxy = '1.5.3'
+
+// database
+def room = '1.1.1'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // support
+    implementation "com.android.support:support-v4:${support}"
+    implementation "com.android.support:appcompat-v7:${support}"
+    implementation "com.android.support:recyclerview-v7:${support}"
+    implementation "com.android.support:design:${support}"
+
+    // CardView
+    compile "com.android.support:cardview-v7:${support}"
+
+    //constraint layout
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    // dagger 2
+    implementation "com.google.dagger:dagger:${dagger2}"
+    kapt "com.google.dagger:dagger-compiler:${dagger2}"
+    implementation "com.google.dagger:dagger-android-support:${dagger2}"
+
+    // retrofit 2
+    implementation "com.squareup.retrofit2:retrofit:${retrofit2}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofit2}"
+    api "com.squareup.retrofit2:adapter-rxjava2:${retrofit2}"
+
+    //    moxy (mvp)
+    implementation "com.arello-mobile:moxy:${moxy}"
+    kapt "com.arello-mobile:moxy-compiler:${moxy}"
+    implementation "com.arello-mobile:moxy-android:${moxy}"
+    implementation "com.arello-mobile:moxy-app-compat:${moxy}"
+
+
+    // rxandroid
+    compile "io.reactivex.rxjava2:rxandroid:2.0.1"
+
+//    api 'io.reactivex:rxjava:1.1.6'
+//    api 'io.reactivex.rxjava2:rxjava:2.1.17'
+//    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    //database
+    implementation "android.arch.persistence.room:runtime:${room}"
+    kapt "android.arch.persistence.room:compiler:${room}"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}
