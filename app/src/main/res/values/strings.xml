@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Random Joke</string>
-    <string name="get_one_more_joke_text">Bскать</string>
+    <string name="get_one_more_joke_text">Искать</string>
+    <string name="get_one_more_joke_text_reading">Искать еще</string>
     <string name="topic">Что искать ?</string>
     <string name="ok">OK</string>
     <string name="read_with_tts_descr">Прочитать голосом (TTS)</string>
